@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class StartButtonBehavior : MonoBehaviour
+public class EndButtonBehavior : MonoBehaviour
 {
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -14,10 +14,10 @@ public class StartButtonBehavior : MonoBehaviour
     {
         
     }
-    
-    public void OnStartButtonPressed()
+
+    public void OnEndButtonPressed()
     {
-    Debug.Log("Start Button Pressed");
-    SceneManager.LoadScene("Play");
+    Debug.Log("End Button Pressed");
+    SceneManager.LoadScene("Start");
     }
 }

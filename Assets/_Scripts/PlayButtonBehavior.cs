@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayButtonBehavior : MonoBehaviour
 {
@@ -14,8 +15,9 @@ public class PlayButtonBehavior : MonoBehaviour
         
     }
 
-    public void OnPlayButtonPressed()
+    public void OnBackButtonPressed()
     {
-    Debug.Log("Play Button Pressed");
+    Debug.Log("Back Button Pressed");
+    SceneManager.LoadScene("Start");
     }
 }
